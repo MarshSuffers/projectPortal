@@ -26,13 +26,24 @@ nav h2 {
 }
 /*Nav End*/
 
+/*Rows*/
+
+#row1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+/*Row End*/
+
 /*Cards*/
 .cards {
   display: flex;
+  flex-flow: row wrap;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 1rem;
-  flex-wrap: wrap;
   padding: 1rem;
 }
 
