@@ -1,0 +1,150 @@
+h1,
+p,
+a,
+label,
+span,
+figcaption,
+button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  text-align: center;
+}
+
+body {
+  background-color: rgb(32, 22, 41);
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: slategrey;
+  border: solid;
+  border-color: rgb(216, 202, 241);
+  border-radius: 10px;
+  min-width: 50%;
+}
+
+figure {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  max-width: 500px;
+  max-height: 500px;
+  border: solid;
+  border-color: rgb(216, 202, 241);
+  border-radius: 10px;
+}
+
+img:hover {
+  max-width: 475px;
+  max-height: 475px;
+  border-color: rgb(32, 22, 41);
+}
+
+figcaption {
+  color: black;
+  font-size: 12px;
+  background-color: rgb(216, 202, 241);
+  width: 32%;
+  border-radius: 5px;
+  margin: 0;
+  padding: 0;
+}
+
+#textInput {
+  background-color: black;
+  color: white;
+  margin: 15px;
+  margin-top: 5px;
+  width: 300px;
+  height: 30px;
+  border: 3px solid rgb(32, 22, 41);
+  border-radius: 5px;
+  font-size: 22px;
+}
+
+#textInput:hover {
+  border: 3px solid white;
+}
+
+#btnContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#hiddenBtns {
+  display: none;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  margin: 20px;
+  background-color: rgb(32, 22, 41);
+  border: 3px solid rgb(216, 202, 241);
+  border-radius: 5px;
+  font-size: 22px;
+}
+
+button:hover {
+  border: 5px solid rgb(216, 202, 241);
+  border-radius: 5px;
+  font-size: 28px;
+}
+
+button:active {
+  background-color: rgb(216, 202, 241);
+  border: 3px solid rgb(32, 22, 41);
+  border-radius: 5px;
+  font-size: 28px;
+  color: black;
+}
+
+#rangeContainer {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#colorRange {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#imageRange {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.rangeFlex {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="range"] {
+  margin: 10px;
+  accent-color: rgb(216, 202, 241);
+}
