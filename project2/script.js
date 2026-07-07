@@ -186,13 +186,12 @@ function changeEvil() {
 funBtn.addEventListener("click", changeFun);
 
 function changeFun() {
-  document.getElementById("bigContainer").style.backgroundImage =
-    "images/rainbow.gif";
+  document.getElementById("bigContainer").style.backgroundColor = "none";
 }
 
 //Quote Button - add
 
-//Hide Button - add
+//Hide Button
 hideBtn.addEventListener("click", keepHiding);
 function keepHiding() {
   document.getElementById("hiddenBtns").style.display = "none";
