@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Button Project</title>
+  </head>
+  <body>
+    <div class="container">
+      <img src="images/Charlie.jpg" alt="charlie" width="500px" />
+      <p class="instruction">
+        This project is inside a small container, you can click to add to the
+        counter or hold down the button to speed up the counter.
+        <br />
+        <br />
+        Additionally, when you click the button, the color of the 'Select your
+        color' text will change!
+      </p>
+      <h2 id="h22">Select your color <span id="colorOutput"></span></h2>
+      <label>Red</label>
+      <input type="range" id="rangeRed" value="50" min="0" max="255" />
+      <span id="redValue"></span>
+      <br />
+
+      <label>Green</label>
+      <input type="range" id="rangeGreen" value="0" min="0" max="255" />
+      <span id="greenValue"></span>
+
+      <br />
+      <label>Blue</label>
+      <input type="range" id="rangeBlue" value="0" min="0" max="255" />
+      <span id="blueValue"></span>
+      <br />
+      <button id="redButton">Button</button>
+      <p id="clickText">Clicks: <a id="clicks">0</a></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
