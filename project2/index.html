@@ -4,36 +4,85 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Button Project</title>
+    <title>Color Project</title>
   </head>
   <body>
     <div class="container">
-      <img src="images/Charlie.jpg" alt="charlie" width="500px" />
-      <p class="instruction">
-        This project is inside a small container, you can click to add to the
-        counter or hold down the button to speed up the counter.
+      <h1>Howdy!</h1>
+      <figure id="imageContainer">
+        <img id="image" src="images/Charlie.jpg" alt="choose an image" />
+        <figcaption id="imageCaption">A picture of my cat, Charlie</figcaption>
+      </figure>
+      <p>This site has a TON of fun features, can you figure them all out?</p>
+      <br />
+      <br />
+      <label for="textInput">Type something!</label>
+      <input type="text" id="textInput" name="textInput" />
+      <br />
+      <br />
+      <div id="btnContainer">
+        <label for="evilBtn">Click me!</label>
+        <input type="button" id="evilBtn" name="evilBtn" />
         <br />
         <br />
-        Additionally, when you click the button, the color of the 'Select your
-        color' text will change!
-      </p>
-      <h2 id="h22">Select your color <span id="colorOutput"></span></h2>
-      <label>Red</label>
-      <input type="range" id="rangeRed" value="50" min="0" max="255" />
-      <span id="redValue"></span>
-      <br />
+        <label for="funBtn">FUN</label>
+        <input type="button" id="funBtn" name="funBtn" />
+        <br />
+        <br />
+        <label for="nothingBtn">Nothing Special</label>
+        <input type="button" id="nothingBtn" name="nothingBtn" />
+        <br />
+        <br />
+        <div id="hiddenBtns">
+          <label for="quoteBtn">Quotes</label>
+          <input type="button" id="quoteBtn" name="quoteBtn" />
+          <br />
+          <br />
+          <label for="hideBtn">Hide</label>
+          <input type="button" id="hideBtn" name="hideBtn" />
+          <br />
+          <br />
+          <label for="explodeBtn">Exposion</label>
+          <input type="button" id="explodeBtn" name="explodeBtn" />
+          <br />
+          <br />
+        </div>
+      </div>
+      <div id="rangeContaine">
+        <div id="colorRange">
+          <label>Red</label>
+          <input type="range" id="rangeRed" value="50" min="0" max="255" />
+          <span id="redValue"></span>
+          <br />
 
-      <label>Green</label>
-      <input type="range" id="rangeGreen" value="0" min="0" max="255" />
-      <span id="greenValue"></span>
+          <label>Green</label>
+          <input type="range" id="rangeGreen" value="0" min="0" max="255" />
+          <span id="greenValue"></span>
 
-      <br />
-      <label>Blue</label>
-      <input type="range" id="rangeBlue" value="0" min="0" max="255" />
-      <span id="blueValue"></span>
-      <br />
-      <button id="redButton">Button</button>
-      <p id="clickText">Clicks: <a id="clicks">0</a></p>
+          <br />
+          <label>Blue</label>
+          <input type="range" id="rangeBlue" value="0" min="0" max="255" />
+          <span id="blueValue"></span>
+          <br />
+        </div>
+        <div id="imageRange">
+          <label>Horizontal</label>
+          <input
+            type="range"
+            id="horizontalRange"
+            value="50"
+            min="0"
+            max="100"
+          />
+          <span id="horizontalValue"></span>
+          <label>Vertical</label>
+          <input type="range" id="verticalRange" value="50" min="0" max="100" />
+          <span id="verticalValue"></span>
+        </div>
+      </div>
+      <div id="counter">
+        <button id="counterBtn">Clicks:<span id="clicks">0</span></button>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
