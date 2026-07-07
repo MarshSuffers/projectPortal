@@ -19,6 +19,7 @@ explodeBtn.addEventListener("click", btnPressedNum);
 function btnPressedNum() {
   clickNum++;
   counter.innerText = clickNum;
+  stopHiding();
 }
 
 //Color Picker
@@ -108,20 +109,35 @@ function btnPressedSize() {
 
 //Swap Picture
 
-//Declare Varible
-let whichImage = document.getElementById("image").src;
-console.log(whichImage);
-
 //Event Listener
 image.addEventListener("click", changeImage);
 
 //Function
 function changeImage() {
-  if (clickNum >= 100 && whichImage != "images/lily.jpg") {
+  if (clickNum >= 100) {
     document.getElementById("image").src = "images/lily.jpg";
-  } else if (whichImage != "images/Charlie.jpg") {
-    document.getElementById("image").src = "images/Charlie.jpg";
-  } else {
+    document.getElementById("imageCaption").innerText =
+      "You... scare me. Why'd you click so much?";
+  } else if (clickNum >= 15) {
     document.getElementById("image").src = "images/curl.jpg";
+    document.getElementById("imageCaption").innerText =
+      "That did something!! YAAAAAY!!!";
+  } else {
+    document.getElementById("imageCaption").innerText =
+      "You thought that'd do something? HA!";
+  }
+}
+
+//Unhide Buttons
+
+//Declare Variables
+let input = document.getElementById("textInput").value;
+
+//Function
+function stopHiding() {
+  if (clickNum >= 50 || input == "stop") {
+    document.getElementById("hiddenBtns").style.display = "flex";
+    document.getElementById("remark").innerText =
+      "You found something! Took ya long enough!";
   }
 }
