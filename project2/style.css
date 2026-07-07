@@ -38,16 +38,15 @@ figure {
 }
 
 img {
-  max-width: 500px;
-  max-height: 500px;
+  width: 500px;
   border: solid;
   border-color: rgb(216, 202, 241);
   border-radius: 10px;
 }
 
 img:hover {
-  max-width: 475px;
-  max-height: 475px;
+  max-width: 95%;
+  max-width: 95%;
   border-color: rgb(32, 22, 41);
 }
 
