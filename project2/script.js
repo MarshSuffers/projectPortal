@@ -128,14 +128,33 @@ function changeImage() {
   }
 }
 
-//Unhide Buttons
+//Display Input
 
 //Declare Variables
-let input = document.getElementById("textInput").value;
+let output = document.getElementById("output");
+output.innerHTML = "";
 
-//Function
+//Add Event Listener
+submitBtn.addEventListener("click", displayText);
+
+//Display Text
+
+function displayText() {
+  let input = document.getElementById("textInput").value;
+  output.innerHTML = input;
+}
+
+//Unhide Buttons
+submitBtn.addEventListener("click", stopHiding);
+
 function stopHiding() {
-  if (clickNum >= 50 || input == "stop") {
+  if (
+    clickNum >= 50 ||
+    output.innerHTML == "display" ||
+    output.innerHTML == "stop" ||
+    output.innerHTML == "Display" ||
+    output.innerHTML == "Stop"
+  ) {
     document.getElementById("hiddenBtns").style.display = "flex";
     document.getElementById("remark").innerText =
       "You found something! Took ya long enough!";
