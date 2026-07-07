@@ -41,7 +41,7 @@ nav h2 {
 .cards {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
   gap: 1rem;
   padding: 1rem;
@@ -80,6 +80,10 @@ nav h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 5px;
+  border-color: #3498db;
 }
 
 .cardBack {
@@ -89,6 +93,21 @@ nav h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 5px;
+  border-color: #3498db;
+}
+
+.cardBack a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.cardBack a:hover {
+  color: #3498db;
+  position: relative;
+  bottom: 3px;
 }
 /*Cards End*/
 
