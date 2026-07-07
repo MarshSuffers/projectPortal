@@ -13,6 +13,7 @@ nothingBtn.addEventListener("click", btnPressedNum);
 quoteBtn.addEventListener("click", btnPressedNum);
 hideBtn.addEventListener("click", btnPressedNum);
 explodeBtn.addEventListener("click", btnPressedNum);
+submitBtn.addEventListener("click", btnPressedNum);
 
 //Count clicks and changes text
 
@@ -61,6 +62,7 @@ slider3.oninput = function () {
 counterBtn.addEventListener("click", btnPressedCol);
 quoteBtn.addEventListener("click", btnPressedCol);
 hideBtn.addEventListener("click", btnPressedCol);
+submitBtn.addEventListener("click", btnPressedCol);
 
 function btnPressedCol() {
   let r = slider1.value;
@@ -98,6 +100,7 @@ slider5.oninput = function () {
 counterBtn.addEventListener("click", btnPressedSize);
 quoteBtn.addEventListener("click", btnPressedSize);
 hideBtn.addEventListener("click", btnPressedSize);
+submitBtn.addEventListener("click", btnPressedSize);
 
 function btnPressedSize() {
   let h = slider4.value;
@@ -160,3 +163,40 @@ function stopHiding() {
       "You found something! Took ya long enough!";
   }
 }
+
+//Specific Inputs
+submitBtn.addEventListener("click", something);
+
+function something() {
+  if (output.innerHTML == "something" || output.innerHTML == "Something") {
+    document.getElementById("remark").innerText = "Smart-aleck";
+  }
+}
+
+//Buttons
+
+//Evil Button
+evilBtn.addEventListener("click", changeEvil);
+
+function changeEvil() {
+  document.getElementById("bigContainer").style.display = "none";
+}
+
+//Fun Button - need to finish
+funBtn.addEventListener("click", changeFun);
+
+function changeFun() {
+  document.getElementById("bigContainer").style.backgroundImage =
+    "images/rainbow.gif";
+}
+
+//Quote Button - add
+
+//Hide Button - add
+hideBtn.addEventListener("click", keepHiding);
+function keepHiding() {
+  document.getElementById("hiddenBtns").style.display = "none";
+  document.getElementById("remark").innerText = "Scared?";
+}
+
+//Explode - add
