@@ -133,17 +133,17 @@ function changeImage() {
     pic = 2;
     document.getElementById("imageCaption").innerText =
       "You... scare me. Why'd you click so much?";
-  } else if (clickNum >= 10) {
+  } else if (clickNum >= 100) {
     img.src = "images/Charlie.jpg";
     document.getElementById("imageCaption").innerText =
       "And you don't like the reward? You SUCK!!";
     setTimeout(explode, 5000);
-  } else if (clickNum >= 5 && pic != 1) {
+  } else if (clickNum >= 15 && pic != 1) {
     img.src = "images/curl.jpg";
     pic = 1;
     document.getElementById("imageCaption").innerText =
       "That did something!! YAAAAAY!!!";
-  } else if (clickNum >= 5) {
+  } else if (clickNum >= 15) {
     img.src = "images/Charlie.jpg";
     pic = 0;
     document.getElementById("imageCaption").innerText = "Don't get greedy!";
