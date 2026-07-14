@@ -182,11 +182,18 @@ function changeEvil() {
   document.getElementById("bigContainer").style.display = "none";
 }
 
-//Fun Button - need to finish
+//Fun Button
 funBtn.addEventListener("click", changeFun);
 
 function changeFun() {
-  document.getElementById("bigContainer").style.backgroundColor = "none";
+  document.getElementById("bigContainer").style.backgroundImage =
+    "url('images/rainbow.gif')";
+  document.getElementById("remark").innerText = "Fun! ... for ten seconds.";
+  function unfun() {
+    document.getElementById("bigContainer").style.backgroundImage = "none";
+    document.getElementById("remark").innerText = "Aww, funs over...";
+  }
+  setTimeout(unfun, 10000);
 }
 
 //Quote Button - add
@@ -198,4 +205,12 @@ function keepHiding() {
   document.getElementById("remark").innerText = "Scared?";
 }
 
-//Explode - add
+//Explode
+explodeBtn.addEventListener("click", explode);
+
+function explode() {
+  //document.getElementById("bigContainer").display = "none";
+  let explosion = document.createElement("img");
+  explosion.src = "images/rainbow.gif";
+  document.getElementById("bigContainer").innerHTML;
+}

@@ -1,3 +1,5 @@
+//Date
+
 let currentDate = new Date().toLocaleDateString();
 let date = document.querySelector("#date");
 
@@ -7,3 +9,8 @@ let currentYear = new Date().getFullYear();
 let year = document.querySelector("#year");
 
 year.textContent = currentYear;
+
+//Dynamic Cards
+
+let cardsList = document.querySelector(".cards");
+let cards = [];
