@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minesweeper</title>
+  </head>
+  <body>
+    <section id="chooseDifficulty">
+      <div id="easy">
+        <h3>Easy</h3>
+        <br />
+        <p>8x8</p>
+        <br />
+        <p>10 Mines</p>
+      </div>
+      <div id="medium">
+        <h3>Medium</h3>
+        <br />
+        <p>16x16</p>
+        <br />
+        <p>40 Mines</p>
+      </div>
+      <div id="hard">
+        <h3>Easy</h3>
+        <br />
+        <p>30x16</p>
+        <br />
+        <p>99 Mines</p>
+      </div>
+      <div id="custom">
+        <h3>Custom</h3>
+      </div>
+    </section>
+    <section id="stats">
+      <h2 id="time">00:00</h2>
+      <br />
+      <br />
+      <h2 id="flags">
+        <span id="flagsFound"></span>
+        /
+        <span id="totalFlags"></span>
+      </h2>
+      <br />
+      <br />
+      <h2 id="difficulty">Easy</h2>
+    </section>
+    <section id="mineGrid">
+      <div class="cube">
+        <div class="cubeInner">
+          <button class="cubeBtn"></button>
+          <img class="cubeImg" src="images/bomb.png" />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
