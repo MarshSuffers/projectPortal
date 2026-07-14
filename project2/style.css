@@ -147,3 +147,16 @@ input[type="range"] {
   margin: 10px;
   accent-color: rgb(216, 202, 241);
 }
+
+#exDiv {
+  display: none;
+  border: none;
+  max-width: 200%;
+  max-height: 200%;
+}
+
+#exDiv img {
+  border: none;
+  max-width: 200%;
+  max-height: 200%;
+}

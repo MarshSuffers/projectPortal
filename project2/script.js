@@ -209,5 +209,7 @@ function keepHiding() {
 explodeBtn.addEventListener("click", explode);
 
 function explode() {
-  document.getElementById("bigContainer").display = "none";
+  document.getElementById("exDiv").style.display = "block";
+  console.log(exDiv.style.display);
+  document.getElementById("bigContainer").style.display = "none";
 }
