@@ -1,0 +1,23 @@
+h1,
+h2,
+h3,
+p,
+a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-flow: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+section {
+  border: 5px solid blue;
+}
+
+#chooseDifficulty {
+  display: grid;
+  grid: 2 2;
+}
