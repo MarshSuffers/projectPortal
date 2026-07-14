@@ -119,19 +119,34 @@ function btnPressedSize() {
 
 //Swap Picture
 
+//Declare Variables
+let img = document.getElementById("image");
+let pic = 0;
+
 //Event Listener
 image.addEventListener("click", changeImage);
 
 //Function
 function changeImage() {
-  if (clickNum >= 100) {
-    document.getElementById("image").src = "images/lily.jpg";
+  if (clickNum >= 10 && pic != 2) {
+    img.src = "images/lily.jpg";
+    pic = 2;
     document.getElementById("imageCaption").innerText =
       "You... scare me. Why'd you click so much?";
-  } else if (clickNum >= 15) {
-    document.getElementById("image").src = "images/curl.jpg";
+  } else if (clickNum >= 10) {
+    img.src = "images/Charlie.jpg";
+    document.getElementById("imageCaption").innerText =
+      "And you don't like the reward? You SUCK!!";
+    setTimeout(explode, 5000);
+  } else if (clickNum >= 5 && pic != 1) {
+    img.src = "images/curl.jpg";
+    pic = 1;
     document.getElementById("imageCaption").innerText =
       "That did something!! YAAAAAY!!!";
+  } else if (clickNum >= 5) {
+    img.src = "images/Charlie.jpg";
+    pic = 0;
+    document.getElementById("imageCaption").innerText = "Don't get greedy!";
   } else {
     document.getElementById("imageCaption").innerText =
       "You thought that'd do something? HA!";
