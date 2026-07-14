@@ -209,8 +209,5 @@ function keepHiding() {
 explodeBtn.addEventListener("click", explode);
 
 function explode() {
-  //document.getElementById("bigContainer").display = "none";
-  let explosion = document.createElement("img");
-  explosion.src = "images/rainbow.gif";
-  document.getElementById("bigContainer").innerHTML;
+  document.getElementById("bigContainer").display = "none";
 }
