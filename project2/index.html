@@ -8,7 +8,7 @@
   </head>
   <body>
     <div id="exDiv">
-      <img src="images/explosion.gif">
+      <img src="images/explosion.gif" id="exImage">
     </div>
     <div class="container" id="bigContainer">
       <h1>Howdy!</h1>
@@ -22,7 +22,10 @@
       </figure>
       <p id="remark">
         This site has a <em>TON</em> of fun features, can you figure them all
-        out?
+        out? 
+        <br>
+        <br>
+         Oh, and allow autoplay and reload the site if you want to hear some music! All copyright free, don't worry.
       </p>
       <br />
       <br />
@@ -57,21 +60,21 @@
       <div id="rangeContainer">
         <div id="colorRange">
           <div class="rangeFlex">
-            <label>Red</label>
+            <label id="rLabel">Red</label>
             <input type="range" id="rangeRed" value="50" min="0" max="255" />
             <span id="redValue"></span>
             <br />
           </div>
           
           <div class="rangeFlex">
-            <label>Green</label>
+            <label id="gLabel">Green</label>
            <input type="range" id="rangeGreen" value="50" min="0" max="255" />
            <span id="greenValue"></span>
            <br />
           </div>
 
           <div class="rangeFlex">
-            <label>Blue</label>
+            <label id="bLabel">Blue</label>
             <input type="range" id="rangeBlue" value="50" min="0" max="255" / >
             <span id="blueValue"></span>
            <br />
@@ -98,6 +101,7 @@
       <div id="counter">
         <button id="counterBtn">Clicks: <span id="clicks">0</span></button>
       </div>
+      <audio id="music" src="sounds/basicMusic.mp3" autoplay loop></audio>
     </div>
     <script src="script.js"></script>
   </body>
