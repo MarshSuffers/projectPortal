@@ -34,10 +34,9 @@ let music = false;
 
 function playCalm() {
   if (music == true) {
-    cheeryMusic.pause;
-    peppyMusic.pause;
-    calmMusic.pause();
-    music = false;
+    cheeryMusic.pause();
+    peppyMusic.pause();
+    calmMusic.play();
   } else {
     calmMusic.play();
     music = true;
@@ -46,11 +45,10 @@ function playCalm() {
 }
 function playCheery() {
   if (music == true) {
-    cheeryMusic.pause;
-    peppyMusic.pause;
+    cheeryMusic.play();
+    peppyMusic.pause();
     calmMusic.pause();
     console.log(music);
-    music = false;
   } else {
     cheeryMusic.play();
     music = true;
@@ -58,10 +56,9 @@ function playCheery() {
 }
 function playPeppy() {
   if (music == true) {
-    cheeryMusic.pause;
-    peppyMusic.pause;
+    cheeryMusic.pause();
+    peppyMusic.play();
     calmMusic.pause();
-    music = false;
   } else {
     peppyMusic.play();
     music = true;
