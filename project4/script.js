@@ -105,13 +105,26 @@ const tileArray = [
   98, 99, 100, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114,
   115, 116, 117, 118, 119, 120,
 ];
+const btnArray = [];
+
 let mineGrid = document.getElementById("mineGrid");
 
 for (let i = 0; i < tileArray.length; i++) {
   mineGrid.innerHTML += `<div class="cubes">
-        <button class="cubeBtn" id="cubeBtn1"></button>
+        <button class="cubeBtn" id="cubeBtn${i}"></button>
       </div>`;
-  console.log(mineGrid.innerHTML);
+  btnArray.push("cubeBtn" + i);
+}
+console.log(btnArray);
+
+//Assign Bombs
+//Randomize Bombs
+
+for (let i = 0; i < 16; i++) {
+  let randomIndex = Math.floor(Math.random() * i);
+  i--;
+  let button = document.getElementById("cubeBtn" + i);
+  console.log(button);
 }
 
 //Game Over
