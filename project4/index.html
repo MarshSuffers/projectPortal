@@ -7,51 +7,42 @@
     <title>Minesweeper</title>
   </head>
   <body>
-    <section id="chooseDifficulty">
-      <div id="easy">
-        <h3>Easy</h3>
+    <div id="display">
+      <section id="stats">
+        <h2 id="time">
+          <span id="minutes">00</span>:<span id="seconds">00</span>
+        </h2>
         <br />
-        <p>8x8</p>
         <br />
-        <p>10 Mines</p>
-      </div>
-      <div id="medium">
-        <h3>Medium</h3>
+        <h2 id="flags">
+          <span id="flagsFound">0</span>
+          /10
+          <img src="images/flag.png" />
+        </h2>
+      </section>
+      <section id="settings">
+        <h2>Settings</h2>
         <br />
-        <p>16x16</p>
         <br />
-        <p>40 Mines</p>
-      </div>
-      <div id="hard">
-        <h3>Easy</h3>
+        <h3>Music</h3>
+        <ul>
+          <li><button id="songBtnCalm">Calm</button></li>
+          <li><button id="songBtnCheery">Cheery</button></li>
+          <li><button id="songBtnPeppy">Peppy</button></li>
+        </ul>
         <br />
-        <p>30x16</p>
         <br />
-        <p>99 Mines</p>
-      </div>
-      <div id="custom">
-        <h3>Custom</h3>
-      </div>
-    </section>
-    <section id="stats">
-      <h2 id="time">00:00</h2>
-      <br />
-      <br />
-      <h2 id="flags">
-        <span id="flagsFound"></span>
-        /
-        <span id="totalFlags"></span>
-      </h2>
-      <br />
-      <br />
-      <h2 id="difficulty">Easy</h2>
-    </section>
+        <h3>Colors</h3>
+        <ul>
+          <li><button id="colorBtnGrey">Grey</button></li>
+          <li><button id="colorBtnGreen">Green</button></li>
+          <li><button id="colorBtnBlue">Blue</button></li>
+        </ul>
+      </section>
+    </div>
     <section id="mineGrid">
-      <div class="cube">
-        <div class="cubeInner">
-          <button class="cubeBtn"></button>
-          <img class="cubeImg" src="images/bomb.png" />
-        </div>
+      <div class="cubes">
+        <button class="cubeBtn" id="cubeBtn1"></button>
       </div>
     </section>
     <script src="script.js"></script>

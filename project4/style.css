@@ -2,22 +2,83 @@ h1,
 h2,
 h3,
 p,
-a {
+a,
+button {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
   display: flex;
-  flex-flow: row-reverse;
-  justify-content: flex-end;
-  align-items: center;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 section {
-  border: 5px solid blue;
+  border: 8px outset gray;
+  background-color: lightgray;
+  margin: 20px;
 }
 
-#chooseDifficulty {
-  display: grid;
-  grid: 2 2;
+#display {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 20%;
+  max-height: 75vh;
+}
+
+#display section {
+  width: 100%;
+  text-align: center;
+}
+
+#display h2 {
+  font-size: 40px;
+  margin: 0;
+}
+
+#display h3 {
+  font-size: 36px;
+  margin: 0;
+}
+
+#display li {
+  list-style-type: none;
+  position: relative;
+  right: 15px;
+}
+
+#display button {
+  width: 50%;
+  height: 35px;
+  font-size: 22px;
+  margin: 5px;
+}
+
+#mineGrid {
+  width: 1200px;
+  min-height: 1000px;
+}
+
+.cubes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.cubeBtn {
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  border: 3px inset dimgrey;
+  background-image: url("images/bomb.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 85%;
+  background-color: whitesmoke;
 }
