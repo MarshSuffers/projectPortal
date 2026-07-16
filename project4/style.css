@@ -59,15 +59,16 @@ section {
 
 #mineGrid {
   width: 1200px;
-  height: 1000px;
-}
-
-.cubes {
+  height: 1009px;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: flex-start;
+}
+
+.cubes {
   margin: 0;
+  margin-bottom: -20px;
   padding: 0;
 }
 
