@@ -13,4 +13,16 @@ year.textContent = currentYear;
 //Dynamic Cards
 
 let cardsList = document.querySelector(".cards");
-let cards = [];
+let titles = [];
+let links = [];
+let map = new Map();
+
+for (let i = 0; i < titles.length; i++) {
+  // mp = Map
+  // keys = key array
+  // values = value array
+  map.set(titles[i], links[i]);
+}
+for (let key of map.titles()) {
+  console.log(key + " => " + map.get(key));
+}
