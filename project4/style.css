@@ -76,7 +76,6 @@ section {
   height: 100px;
   margin: 0;
   border: 3px inset dimgrey;
-  background-image: url("images/bomb.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 85%;

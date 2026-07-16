@@ -119,14 +119,16 @@ console.log(btnArray);
 
 //Assign Bombs
 //Randomize Bombs
-
 for (let i = 0; i < 16; i++) {
-  let randomIndex = Math.floor(Math.random() * i);
-  i--;
-  let button = document.getElementById("cubeBtn" + i);
+  let randIndex = 0;
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+  }
+  console.log(getRandomInt(3));
+  let button = document.getElementById("cubeBtn" + randomIndex);
+  button.style.backgroundImage = "images/flag.png";
   console.log(button);
 }
-
 //Game Over
 
 //Win
