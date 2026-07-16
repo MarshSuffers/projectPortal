@@ -59,7 +59,7 @@ section {
 
 #mineGrid {
   width: 1200px;
-  min-height: 1000px;
+  height: 1000px;
 }
 
 .cubes {
